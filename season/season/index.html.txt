@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>SeasonRP - Chargement</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #f5b6e3, #c7dfff);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .logo {
+      max-width: 300px;
+      margin-bottom: 40px;
+    }
+
+    .loading-bar {
+      width: 300px;
+      height: 25px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      overflow: hidden;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .loading-fill {
+      height: 100%;
+      width: 0;
+      background: #00bcd4;
+      animation: loading 4s infinite;
+    }
+
+    @keyframes loading {
+      0% { width: 0; }
+      50% { width: 100%; }
+      100% { width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="season.png" alt="Logo SeasonRP" class="logo">
+    <div class="loading-bar">
+      <div class="loading-fill"></div>
+    </div>
+  </div>
+</body>
+</html>
